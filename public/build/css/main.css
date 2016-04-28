@@ -1,0 +1,33 @@
+.container {
+  background-color: green; }
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style-type: none; }
+  @media (min-width: 600px) {
+    .nav-list {
+      flex-direction: row;
+      justify-content: space-around; } }
+
+.nav-line {
+  font-weight: bold; }
+  .nav-line:hover {
+    font-weight: bolder;
+    text-decoration: underline; }
+
+.body {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 600px) {
+    .body {
+      display: flex;
+      flex-direction: row; } }
+
+.left {
+  width: 40%;
+  border: 1px dotted blue; }
+
+.right {
+  width: 40%; }

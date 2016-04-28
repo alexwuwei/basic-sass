@@ -1,0 +1,40 @@
+$base: green;
+$secondary: darken($base, 5%);
+
+.container {
+  background-color: $base
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style-type: none;
+  @media (min-width: 600px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.nav-line {
+  font-weight: bold;
+  &:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary
+  @media (min-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.left && .right {
+  width: 40%;
+}
