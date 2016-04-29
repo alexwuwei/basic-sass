@@ -1,8 +1,19 @@
-.container {
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+body {
   background-color: green; }
+
+.body {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%; }
 
 .nav-list {
   display: flex;
+  font-size: 16px;
   flex-direction: column;
   text-decoration: none;
   list-style-type: none; }
@@ -19,15 +30,24 @@
 
 .body {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #006700; }
   @media (min-width: 600px) {
     .body {
       display: flex;
-      flex-direction: row; } }
+      flex-direction: row;
+      justify-content: space-between; } }
 
-.left {
+.left, .right {
   width: 40%;
-  border: 1px dotted blue; }
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+  width: 75%;
+  margin: 0 auto; }
+  .left p, .right p {
+    color: white; }
 
 .right {
-  width: 40%; }
+  padding-left: 1%; }
+  .right p {
+    color: yellow; }
