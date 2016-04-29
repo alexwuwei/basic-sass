@@ -1,0 +1,87 @@
+////////////////////
+// Variables
+////////////////////
+
+$base: green;
+$secondary: darken($base, 5%);
+$text-color: white;
+$desktop-width: 600px;
+$gutter: 1%;
+
+////////////////////
+// Mixins
+////////////////////
+
+@mixin box {
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+  width: 75%;
+  margin: 0 auto;
+}
+
+////////////////////
+// Styles, extends, nesting
+////////////////////
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+body {
+  background-color: $base
+}
+
+.body {
+  padding-top: $gutter;
+  padding-bottom: $gutter;
+  padding-left: $gutter;
+}
+
+.nav-list {
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  text-decoration: none;
+  list-style-type: none;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.nav-line {
+  font-weight: bold;
+  &:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary;
+  @media (min-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.left {
+  width: 40%;
+  p {
+    color: $text-color;
+  }
+  @include box;
+}
+
+.right {
+  @extend .left;
+  p {
+    color: yellow;
+  }
+  padding-left: $gutter;
+}

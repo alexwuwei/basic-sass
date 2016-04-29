@@ -1,0 +1,27 @@
+{
+  "name": "basic-sass",
+  "version": "1.0.0",
+  "description": "A simple web app to familiarize myself with basic sass principles. Uses gulp to compile sass to css.",
+  "main": "client-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexwuwei/basic-sass.git"
+  },
+  "author": "Hugo A Guerra <guerrahugoa@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexwuwei/basic-sass/issues"
+  },
+  "homepage": "https://github.com/alexwuwei/basic-sass#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-webpack": "^1.5.0"
+  }
+}
